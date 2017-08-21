@@ -1,6 +1,3 @@
-# app的安装包
-*.apk
-
 # VM的dex文件
 *.dex
 
@@ -22,12 +19,8 @@ local.properties
 # Intellij 文件
 *.iml
 .idea/
-.idea/compiler.xml
-.idea/kotlinc.xml
-.idea/libraries/
-.idea/misc.xml
-.idea/modules.xml
-.idea/modules/
-.idea/uiDesigner.xml
-.idea/vcs.xml
-.idea/workspace.xml
+!/settings.gradle
+!/gradlew.bat
+!/build.gradle
+!/gradlew
+!/src/main/java/
