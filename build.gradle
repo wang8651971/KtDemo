@@ -25,6 +25,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile 'io.reactivex:rxjava:1.0.14'
 }
 
 compileKotlin {
