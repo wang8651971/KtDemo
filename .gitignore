@@ -1,0 +1,40 @@
+# app的安装包
+*.apk
+
+# VM的dex文件
+*.dex
+
+# Java类文件
+*.class
+
+# 自动生成文件
+bin/
+gen/
+out/
+**/build/
+# Gradle 文件
+.gradle/
+# 本地配置文件 (sdk path, 等)
+local.properties
+# 日志文件
+*.log
+
+# Intellij 文件
+*.iml
+.idea/
+.idea/compiler.xml
+.idea/kotlinc.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+build.gradle
+build/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+src/main/java/
