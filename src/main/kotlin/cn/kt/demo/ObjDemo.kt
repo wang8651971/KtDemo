@@ -7,9 +7,9 @@ fun main(vararg args: String) {
     man.playGame("电脑游戏")
 }
 
-open class Base(val name: String) : Play {
-    override fun playGame(type: String) {
-        println("我正在玩游戏：$type !")
+open class Base(val name: String) {
+
+    companion object {
     }
 
     init {
@@ -32,7 +32,11 @@ open class Person(name: String, val age: Int) : Base(name) {
     }
 }
 
-class Man(name: String, age: Int, val run: String) : Person(name, age) {
+class Man(name: String, age: Int, val run: String) : Person(name, age), Play {
+    override fun playGame(type: String) {
+        println("我在玩游戏：$type")
+    }
+
     init {
         println("Man的构造函数：$name  $age  $run")
     }
@@ -42,6 +46,13 @@ class Man(name: String, age: Int, val run: String) : Person(name, age) {
     }
 }
 
+open class AA(val name: String) {
+    init {
+        println("AA的构造函数执行了：$name")
+    }
+}
+
 interface Play {
+    val name: String
     fun playGame(type: String)
 }
